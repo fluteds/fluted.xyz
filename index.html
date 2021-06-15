@@ -1,879 +1,111 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <title>fluteds</title>
-
+    <meta>
+    <meta property="og:site_name" content="fluted.xyz">
+    <meta name="theme-color" content="#9c1099">
+    <meta property="og:title" content="fluted.xyz" />
+    <meta property="og:description" content="fluted.xyz" />
+    <meta property="og:url" content="fluted.xyz" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
     <link rel="shortcut icon" href="https://i1225.photobucket.com/albums/ee381/enix-directory/Pixels/30.gif">
+    <title>fluteds | fluted.xyz</title>
+    <link rel="stylesheet" href="https://cdn.statically.io/libs/tailwindcss/1.4.6/tailwind.min.css">
 
-    <!--------------------JAVASCRIPTS-------------------->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
-    <script>
-        (function ($) {
-            $(document).ready(function () {
-                $("a[title]").style_my_tooltips({
-                    tip_follows_cursor: true,
-                    tip_delay_time: 50,
-                    tip_fade_speed: 0,
-                    attribute: "title"
-                });
-            });
-        })(jQuery);
+    <script async defer data-website-id="b5e7ccf9-0e3a-4e63-809f-e20a382d4c86"
+        src="https://anila.statically.io/script.js">
     </script>
-
-    <link href="//fonts.googleapis.com/css?family=Work+Sans|Handlee|Barlow|DM+Sans|Material+Icons" rel="stylesheet">
-
-    <script src="//static.tumblr.com/2pnwama/DLppehqvd/feathericons.js"></script>
-
-    <script src="//dl.dropbox.com/s/brdv4yv2iaigjmp/glenplayer07.js"></script>
-
-    <!-------------------------------------------------------------------->
-
-    <style type="text/css">
-        /*--------------------TOOLTIPS--------------------*/
-        #s-m-t-tooltip {
-            padding: 5px 10px;
-            margin: 20px;
-            background-color: var(--Container-Background);
-            border: 1px solid var(--Container-Border);
-            border-radius: 2px;
-            font-family: work sans;
-            font-size: 9px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--Main-Text);
-            z-index: 99;
-            max-width: 40vw;
-        }
-
-        /*--------------------TEXT HIGHLIGHT--------------------*/
-        ::selection {
-            color: var(--Text-Highlight);
-        }
-
-        ::-moz-selection {
-            color: var(--Text-Highlight);
-        }
-
-        /*--------------------BASICS--------------------*/
-        body {
-            line-height: 1.6em;
-            font-size: 12px;
-            text-align: left;
-        }
-
-        a,
-        .bache span {
-            text-decoration: none;
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-        }
-
-        pre,
-        code {
-            white-space: pre-wrap;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        /*----------- CUSTOMIZATION OPTIONS -----------*/
-
-
-        body {
-            /* BACKGROUND ASSETS */
-            background: #000 url('https://64.media.tumblr.com/fad4cee4c34914dd33c2204c09cf7668/tumblr_inline_mqvlarhoKt1qz4rgp.gif');
-            background-attachment: fixed;
-            background-repeat: repeat;
-            background-size: auto;
-            background-position: center;
-        }
-
-        /* COLORS, SIZES, GAPS, ETC */
-
-
-        :root {
-            /*------ CONTAINER/BOX ------*/
-            --Container-Width: 520px;
-            --Container-Background: #4b0909;
-            --Container-Border-Size: 2px;
-            --Container-Border: #969697;
-            --Container-Shadow-Color: 0, 0, 0;
-            /* RGB value */
-            --Container-Shadow-Size: 69px;
-            --Container-Shadow-Opacity: 0.69;
-
-            --Container-Frame-Padding: 25px;
-            /* outer padding */
-            --Container-Inner-Padding: 10px;
-
-            /*------ TOP LEFT TEXT ------*/
-            --Intro-Text-Label-Font-Size: 11px;
-            --Intro-Text-Label: #b74760;
-            --Intro-Text-Detail-Font-Size: 12px;
-            --Intro-Text-Detail: #8a8892;
-            --Intro-Text-Bottom-Border-Size: 1px;
-            --Intro-Text-Bottom-Border: #969697;
-
-            /*------ CORNER ICON / AVATAR ------*/
-            --Icon-Size: 42px;
-            --Icon-Padding: 9px;
-
-            /*------ POSTMARK WAVES ------*/
-            --Squiggles-Size: 48px;
-            --Squiggles-Thickness: 1px;
-            --Squiggles: #969697;
-            --Squiggles-Spacing: 12px;
-            --Squiggles-Right-Margin: 11px;
-
-            /*------ MAIN ABOUT TEXT ------*/
-            --Main-Text: #878c91;
-            --Main-Text-Font-Size: 12px;
-            --Main-Text-Links: #a4a3aa;
-            --Main-Text-Links-Bottom-Border: #35323c;
-            --Main-Text-Heading: #a33b5a;
-            --Main-Text-Bullet-Hearts: #b64264;
-            --Main-Text-Padding: 25px;
-            --Scrollbar: #969697;
-
-            /*------ BOTTOM LEFT TEXT ------*/
-            --Corner-Text-Font-Size: 10px;
-            --Corner-Text: #8b869a;
-
-            /*------ BOTTOM RIGHT TRIANGLE ------*/
-            --Corner-Triangle-Size: 17px;
-            --Corner-Triangle: #969697;
-
-            /*------ CUSTOM LINKS [BOTTOM] ------*/
-            --Custom-Links-Top-Gap: 30px;
-            --Custom-Links-Font-Size: 10px;
-            --Custom-Links-Text: #8a8892;
-            --Custom-Links-Background: #4b0909;
-            --Custom-Links-Padding: 9px;
-            --Custom-Links-Bottom-Border: #969697;
-
-            --Custom-Links-Right-Text: #8a8892;
-            --Custom-Links-Right-Text-Font-Size: 12px;
-
-            --Custom-Links-Spacing: 11px;
-
-            /*------ MUSIC PLAYER ------*/
-            --Circle-Size: 36px;
-            --Progress-Border-Size: 2px;
-            --Progress-Empty: #090909;
-            --Progress-Fill: #a33b5a;
-            --Player-Background: #121212;
-            --Play-Pause-Buttons-Size: 12px;
-            --Play-Pause-Buttons-Color: #a33b5a;
-            --Player-Text-Margin: 12px;
-
-            --Song-Name-Font-Size: 9px;
-            --Song-Name-Color: #d7597e;
-
-            --Artist-Name-Font-Size: 10px;
-            --Artist-Name-Color: #8a8892;
-
-            /*------ 'BACK TO BLOG' [TOP LEFT] ------*/
-            --Back-Arrow-Size: 17px;
-            --Back-Arrow: #64626b;
-            --Back-Text-Font-Size: 10px;
-            --Back-Text: #8a8892;
-
-            /*------ MISC/GENERAL/OTHER ------*/
-            --Window-Margin: 22px;
-            --Text-Highlight: #a43f56;
-            --Credit-Color: #706e79;
-        }
-
-        /*------ CONTAINER ------*/
-        #cont-h-a {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: -1;
-        }
-
-        #cont-h-b {
-            display: inline-block;
-        }
-
-        #cont-v-a {
-            height: 100vh;
-            display: table;
-        }
-
-        #cont-v-b {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .container {
-            margin-top: calc(var(--Custom-Links-Top-Gap));
-            transform: rotate(1.69deg);
-            width: var(--Container-Width);
-            background: var(--Container-Background);
-            border-radius: 3px;
-            box-shadow: 0px 0px var(--Container-Shadow-Size) 0px rgba(var(--Container-Shadow-Color), var(--Container-Shadow-Opacity));
-        }
-
-        @-webkit-keyframes burrito {
-            0% {
-                margin-top: 69px;
-                transform: rotate(3.69deg);
-            }
-
-            100% {
-                margin-top: calc(var(--Custom-Links-Top-Gap));
-                transform: rotate(1.69deg);
-            }
-        }
-
-        .animate-on-load {
-            animation: burrito ease-in 1;
-            animation-fill-mode: forwards;
-            animation-duration: 1s;
-        }
-
-        .frame {
-            width: calc(100% - (var(--Container-Frame-Padding) * 2));
-            height: calc(100% - (var(--Container-Frame-Padding) * 2));
-            padding: var(--Container-Frame-Padding);
-        }
-
-        .border {
-            position: relative;
-            width: calc(100% - (var(--Container-Border-Size) * 2));
-            height: calc(100% - (var(--Container-Border-Size) * 2));
-            border: var(--Container-Border-Size) solid var(--Container-Border);
-            border-radius: 2px;
-        }
-
-        /*------ TOP LEFT TEXT ------*/
-        .intro-text {
-            position: absolute;
-            margin-top: var(--Container-Inner-Padding);
-            margin-left: var(--Container-Inner-Padding);
-            text-align: left;
-        }
-
-        .text-row {
-            margin-bottom: 7px;
-            padding-bottom: 3px;
-            padding-right: 7px;
-            padding-left: 2px;
-            border-bottom: var(--Intro-Text-Bottom-Border-Size) solid var(--Intro-Text-Bottom-Border);
-            line-height: 1em;
-        }
-
-        .text-row label {
-            margin-right: 1px;
-            font-family: handlee;
-            font-size: var(--Intro-Text-Label-Font-Size);
-            letter-spacing: .5px;
-            color: var(--Intro-Text-Label);
-        }
-
-        .text-row detail {
-            font-family: barlow;
-            font-size: var(--Intro-Text-Detail-Font-Size);
-            color: var(--Intro-Text-Detail);
-        }
-
-        /*------ CORNER IMAGE [ICON] ------*/
-        .corner {
-            position: absolute;
-            margin-top: calc(var(--Container-Border-Size) * -1);
-            right: 0;
-            margin-right: calc(var(--Container-Border-Size) * -1);
-            border-left: calc(var(--Container-Border-Size) * 2) solid var(--Container-Background);
-            border-bottom: calc(var(--Container-Border-Size) * 2) solid var(--Container-Background);
-        }
-
-        .corner-icon {
-            width: var(--Icon-Size);
-            height: var(--Icon-Size);
-            padding: var(--Icon-Padding);
-            border: var(--Container-Border-Size) solid var(--Container-Border);
-        }
-
-        /*------ SQUIGGLES ------*/
-        .squid {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin-right: calc(var(--Icon-Padding) + (var(--Icon-Size) / 2) + var(--Squiggles-Right-Margin));
-            height: calc(var(--Icon-Size) + (var(--Icon-Padding) * 2));
-            display: table;
-        }
-
-        .sqm {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .squid-row {
-            display: flex;
-            align-items: center;
-            height: 0;
-            margin-bottom: var(--Squiggles-Spacing);
-        }
-
-        .squid-u {
-            margin-top: calc(var(--Squiggles-Size) / -2);
-            width: var(--Squiggles-Size);
-            height: var(--Squiggles-Size);
-            border: var(--Squiggles-Thickness) solid var(--Squiggles);
-            border-color: transparent transparent var(--Squiggles) transparent;
-            border-radius: 0 0 calc(var(--Squiggles-Size) / 2) 50%/calc(var(--Squiggles-Size) / 2);
-        }
-
-        .squid-n {
-            margin-top: var(--Squiggles-Size);
-            margin-left: calc((var(--Squiggles-Size) / 3) * -1);
-            width: var(--Squiggles-Size);
-            height: var(--Squiggles-Size);
-            border: var(--Squiggles-Thickness) solid var(--Squiggles);
-            border-color: var(--Squiggles) transparent transparent transparent;
-            border-radius: 50%/calc(var(--Squiggles-Size) / 2) calc(var(--Squiggles-Size) / 2) 0 0;
-        }
-
-        /*------ MAIN ABOUT TEXT ------*/
-        .main-text {
-            margin-top: calc(var(--Icon-Size) + (var(--Icon-Padding) * 2) + (var(--Container-Border-Size) * 3));
-            margin-bottom: calc((var(--Container-Inner-Padding) * 2) + var(--Corner-Triangle-Size));
-            padding: var(--Main-Text-Padding);
-            width: calc(100% - (var(--Main-Text-Padding) * 2));
-            font-family: dm sans;
-            font-size: var(--Main-Text-Font-Size);
-            color: var(--Main-Text);
-            text-align: left;
-            line-height: 1.85em;
-        }
-
-        .scb {
-            position: relative;
-
-
-            /* uncomment the following lines if your text is long */
-            /* you can change 180px to whatever you wish */
-
-            /*
-    padding-right:10px;
-    max-height:180px;
-    overflow:auto;
-    */
-        }
-
-        .scb::-webkit-scrollbar {
-            width: 17px;
-            height: 17px;
-            background-color: var(--Container-Background);
-        }
-
-        .scb::-webkit-scrollbar-thumb {
-            border: 8px solid var(--Container-Background);
-            background-color: var(--Scrollbar);
-        }
-
-        .main-text h1 {
-            margin: 0.5em auto;
-            font-size: calc(var(--Main-Text-Font-Size) + 1px);
-            text-transform: lowercase;
-            letter-spacing: 1px;
-            color: var(--Main-Text-Heading);
-        }
-
-        .main-text a {
-            color: var(--Main-Text-Links);
-            padding-bottom: 1px;
-            border-bottom: 1px solid var(--Main-Text-Links-Bottom-Border);
-        }
-
-        .main-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        .main-text right {
-            display: block;
-            text-align: right;
-        }
-
-        .main-text ul:only-of-type,
-        .main-text ol:only-of-type {
-            margin-left: calc((var(--Main-Text-Font-Size) + 2px) * -1);
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .main-text ul {
-            list-style: none;
-        }
-
-        .main-text ul li:before {
-            content: "♡";
-            position: absolute;
-            margin-left: calc((var(--Main-Text-Font-Size) + 2px) * -1.5);
-            font-size: calc(var(--Main-Text-Font-Size) + 2px);
-            color: var(--Main-Text-Bullet-Hearts);
-        }
-
-        /*------ CORNER TRIANGLE ------*/
-        .tri-hol {
-            position: absolute;
-            bottom: 0;
-            margin-bottom: calc(var(--Container-Inner-Padding) - var(--Container-Border-Size));
-            right: 0;
-            margin-right: calc(var(--Container-Inner-Padding) - var(--Container-Border-Size));
-            width: var(--Corner-Triangle-Size);
-            height: var(--Corner-Triangle-Size);
-        }
-
-        .cheesecake {
-            width: 0;
-            height: 0;
-            border-left: var(--Corner-Triangle-Size) solid transparent;
-            border-bottom: var(--Corner-Triangle-Size) solid var(--Corner-Triangle);
-        }
-
-        .cs {
-            position: absolute;
-            margin-top: calc(var(--Container-Border-Size) * 2);
-            margin-right: calc(var(--Container-Border-Size) - .5px);
-            right: 0;
-            width: 0;
-            height: 0;
-            border-left: calc(var(--Corner-Triangle-Size) - (var(--Container-Border-Size) * 3)) solid transparent;
-            border-bottom: calc(var(--Corner-Triangle-Size) - (var(--Container-Border-Size) * 3)) solid var(--Container-Background);
-        }
-
-        .td {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-left: calc(var(--Corner-Triangle-Size) * 0.65) solid transparent;
-            border-bottom: calc(var(--Corner-Triangle-Size) * 0.65) solid var(--Corner-Triangle);
-        }
-
-        .fc {
-            position: absolute;
-            bottom: 0;
-            margin-bottom: var(--Container-Border-Size);
-            right: 0;
-            margin-right: calc(var(--Container-Border-Size) - .5px);
-            width: 0;
-            height: 0;
-            border-left: calc((var(--Corner-Triangle-Size) * 0.65) - (var(--Container-Border-Size) * 3)) solid transparent;
-            border-bottom: calc((var(--Corner-Triangle-Size) * 0.65) - (var(--Container-Border-Size) * 3)) solid var(--Container-Background);
-        }
-
-        /*------ CORNER TEXT ------*/
-        .corner-text {
-            position: absolute;
-            bottom: 0;
-            margin-bottom: var(--Container-Inner-Padding);
-            left: 0;
-            margin-left: var(--Container-Inner-Padding);
-            font-family: handlee;
-            font-size: var(--Corner-Text-Font-Size);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--Corner-Text);
-            line-height: 1em;
-        }
-
-        /*------ CUSTOM LINKS ------*/
-        .botnav {
-            margin-top: var(--Custom-Links-Top-Gap);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .botnav a {
-            display: block;
-            margin: 0 var(--Custom-Links-Spacing);
-            background: var(--Custom-Links-Background);
-            padding: var(--Custom-Links-Padding);
-            border-radius: 3px;
-            border-bottom: 2px solid var(--Custom-Links-Bottom-Border);
-            font-family: work sans;
-            font-size: var(--Custom-Links-Font-Size);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--Custom-Links-Text);
-            line-height: 1em;
-        }
-
-        /*------ 'BACK TO BLOG' BUTTON ------*/
-        .bache {
-            position: fixed;
-            top: 0;
-            margin-top: var(--Window-Margin);
-            left: 0;
-            margin-left: var(--Window-Margin);
-            display: flex;
-            align-items: center;
-        }
-
-        .bache svg {
-            width: var(--Back-Arrow-Size);
-            height: var(--Back-Arrow-Size);
-            color: var(--Back-Arrow);
-        }
-
-        .bache span {
-            margin-left: 7px;
-            font-family: work sans;
-            font-size: var(--Back-Text-Font-Size);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--Back-Text);
-            opacity: 0;
-        }
-
-        .bache:hover span {
-            opacity: 1;
-        }
-
-        .glenjamin {
-            position: fixed;
-            bottom: 0;
-            padding-bottom: var(--Window-Margin);
-            right: 0;
-            padding-right: var(--Window-Margin);
-        }
-
-        .glenjamin svg {
-            width: 12px;
-            height: 12px;
-            color: var(--Credit-Color);
-        }
-
-        /*-------MUSIC PLAYER-------*/
-        #glenplayer07 {
-            position: fixed;
-            bottom: 0;
-            margin-bottom: var(--Window-Margin);
-            left: 0;
-            margin-left: var(--Window-Margin);
-            z-index: 99;
-        }
-
-        .flamingo {
-            display: flex;
-            align-items: center;
-        }
-
-        .circleofdeath {
-            width: var(--Circle-Size);
-            height: var(--Circle-Size);
-            border-radius: 100%;
-            overflow: hidden;
-        }
-
-        .tinfoil {
-            width: var(--Circle-Size);
-            height: var(--Circle-Size);
-            background: var(--Progress-Empty);
-            border-radius: 100%;
-        }
-
-        .oven {
-            background: var(--Progress-Fill);
-        }
-
-        .oliveoil {
-            width: 100%;
-            height: 100%;
-        }
-
-        .crust {
-            position: absolute;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: var(--Circle-Size);
-            height: var(--Circle-Size);
-        }
-
-        .cherry {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: calc(var(--Circle-Size) - (var(--Progress-Border-Size) * 2));
-            height: calc(var(--Circle-Size) - (var(--Progress-Border-Size) * 2));
-            background: var(--Player-Background);
-            border-radius: 100%;
-            cursor: pointer;
-            z-index: 1;
-        }
-
-        .music-controls {
-            display: flex;
-            align-items: center
-        }
-
-        .music-controls .material-icons {
-            font-size: var(--Play-Pause-Buttons-Size);
-            color: var(--Play-Pause-Buttons-Color);
-        }
-
-        .pausee {
-            display: none;
-        }
-
-        .beff {
-            display: none;
-        }
-
-        .aff {
-            display: block;
-        }
-
-        .music-info {
-            margin-left: var(--Player-Text-Margin);
-            line-height: 1em;
-        }
-
-        .song-name {
-            font-family: work sans;
-            font-size: var(--Song-Name-Font-Size);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--Song-Name-Color);
-        }
-
-        .artist-name {
-            margin-top: 4px;
-            font-family: dm sans;
-            font-size: var(--Artist-Name-Font-Size);
-            letter-spacing: 0.3px;
-            color: var(--Artist-Name-Color);
-        }
-    </style>
-
 </head>
 
-<body>
+<style type="text/css">
+    a:link {
+        COLOR: black;
+        TEXT-DECORATION: none;
+        font-weight: normal
+    }
 
-    <a class="bache" href="/">
-        <i data-feather="arrow-left"></i>
-        <span>return home</span>
-    </a>
+    a:visited {
+        COLOR: rgb(66, 66, 66);
+        TEXT-DECORATION: none;
+        font-weight: normal
+    }
 
-    <div id="cont-h-a">
-        <div id="cont-h-b">
-            <div id="cont-v-a">
-                <div id="cont-v-b">
+    a:active {
+        COLOR: black;
+        TEXT-DECORATION: none
+    }
 
+    a:hover {
+        COLOR: red;
+        TEXT-DECORATION: none;
+        font-weight: none
+    }
+</style>
 
-                    <!-- remove animate-on-load if you don't want the animation -->
-                    <div class="container animate-on-load">
+<body class="p-8 max-w-xl m-auto">
+    <header class="text-center mt-10">
+        <a href="/">
+            <h1 class="text-4xl font-bold">welcome!</h1>
+        </a>
+        <h2 class="font-semibold">thanks for checking out my page</h2>
+    </header>
 
-                        <div class="frame">
-                            <div class="border">
-                                <div class="intro-text">
+    <main class="mt-10">
+        <p>
+            i’m fluteds <code class="bg-black py-1 px-2 text-white rounded text-sm">(they/them)</code>, i like to make
+            open sourced things
+            and learn about coding in general.
+            thank you for finding my page! if you came from one of my projects check out
+            some more i've made.
+        </p>
+    </main>
 
-
-
-                                    <!------ TOP LEFT TEXT ------>
-
-                                    <!--start one row-->
-                                    <div class="text-row">
-                                        <label>To:</label>
-                                        <detail>you</detail>
-                                    </div>
-                                    <!--end one row-->
-
-                                    <!--start one row-->
-                                    <div class="text-row">
-                                        <label>From:</label>
-                                        <detail>fluteds</detail>
-                                    </div>
-                                    <!--end one row-->
-
-
-                                </div>
-                                <!--do not delete this line-->
-
-
-
-
-                                <div class="corner">
-
-
-                                    <!------ CORNER ICON / AVATAR IMAGE ------>
-                                    <!-- put image url between quote marks of src="" -->
-                                    <img class="corner-icon"
-                                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.giphy.com%2Fmedia%2F95PromoujUIuj3ROiP%2F200.gif%3Fcid%3D790b7611050099550947a39fba3cb99c4a20bb6b8afa5acd%26rid%3D200.gif&f=1&nofb=1">
-                                </div>
-                                <!--do not delete this line-->
-
-
-
-
-                                <div class="squid">
-                                    <div class="sqm">
-                                        <div class="squid-row">
-                                            <div class="squid-u"></div>
-                                            <div class="squid-n"></div>
-                                        </div>
-
-                                        <div class="squid-row">
-                                            <div class="squid-u"></div>
-                                            <div class="squid-n"></div>
-                                        </div>
-
-                                        <div class="squid-row">
-                                            <div class="squid-u"></div>
-                                            <div class="squid-n"></div>
-                                        </div>
-                                    </div>
-                                    <!--sqm-->
-                                </div>
-                                <!--squid-->
-
-
-
-
-
-                                <div class="main-text">
-                                    <div class="scb">
-
-                                        <!------ MAIN ABOUT TEXT ------>
-                                        <!-- if you need a scrollbar, go to .scb -->
-
-
-                                        <h1>
-                                            Welcome!</h1>
-                                        <!-- this is an non-numbered list (heart bullets) <ul>
-                                                <li>bullet one
-                                                <li>bullet two
-                                                <li>bullet three
-                                                    </ul>
-
-                                                    -->
-
-                                        <p>
-                                            i’m fluteds (they/them), i like to make open sourced things
-                                            and learn about coding in general.
-                                            thank you for finding my page! if you came from one of my projects check out
-                                            some more i've made.
-                                        </p>
-                                        <strong>some of the projects i use my domain for:</strong>
-                                        </p>
-                                        <p>
-                                            <li><a href="https://url.fluted.xyz">url shortener</a></li>
-                                            <li><a href="https://fluted.xyz/found">a remake of dmaorg.info</a></li>
-                                            <li><a href="https://fluted.xyz/tttools">css tools for turntable.fm</a></li>
-                                        </p>
-
-
-                                    </div>
-                                    <!--scb-->
-                                </div>
-                                <!--end main text | do not delete this line-->
-
-                                <!------ BOTTOM LEFT CORNER TEXT ------>
-                                <div class="corner-text">🍄🐸🍄🐸</div>
-
-                                <div class="tri-hol">
-                                    <div class="cheesecake">
-                                        <div class="cs"></div>
-                                        <div class="td"></div>
-                                        <div class="fc"></div>
-                                    </div>
-                                </div>
-                                <!--tri-hol-->
-                            </div>
-                            <!--border-->
-                        </div>
-                        <!--frame-->
-                    </div>
-                    <!--container-->
-
-                    <div class="botnav">
-                        <!------ CUSTOM LINKS (BOTTOM) ------>
-                        <!--edit, add, or delete as you like-->
-
-                        <a href="https://github.com/fluteds/fluteds">readme</a>
-                        <a href="https://github.com/fluteds">github</a>
-                        <a href="https://github.com/fluteds/s/">url shortener</a>
-
-
-                    </div>
-                    <!--botnav | do not delete below this line-->
-                </div>
-                <!--cont-v-b-->
-            </div>
-            <!--cont-v-a-->
-        </div>
-        <!--cont-h-b-->
+    <div class="mt-10">
+        <p>
+            <h3 class="inline font-bold">
+                <span class="typed"></span>.fluted.xyz
+            </h3>
+        </p>
+        <p>
+            <h3 class="inline font-bold">
+                fluted.xyz/<span class="endtype"></span>
+            </h3>
+        </p>
     </div>
-    <!--cont-h-a-->
 
-    <!-------MUSIC PLAYER------->
-    <div id="glenplayer07">
-        <div class="flamingo">
-            <div class="circleofdeath">
-                <div class="tinfoil">
-                    <div class="oliveoil"></div>
-                </div>
-                <div class="crust">
-                    <div class="cherry">
-                        <div class="music-controls">
-                            <i class="material-icons playy">play_arrow</i>
-                            <i class="material-icons pausee">pause</i>
-                        </div>
-                    </div>
-                    <!--cherry-->
-                </div>
-                <!--crust-->
-            </div>
-            <!--circleofdeath-->
+    <footer class="mt-10 mb-20">
+        <p><a class="border-b border-black" href="https://fluted.xyz" target="_blank">home</a> &bull; <a
+                class="border-b border-black" href="https://twitter.com/fluted_">twitter</a> &bull; <a
+                class="border-b border-black" href="https://github.com/fluteds">github</a></p>
+    </footer>
 
-            <div class="music-info">
-
-
-
-                <!------ MUSIC TITLE & ARTIST NAME ------->
-
-
-                <div class="song-name">Shy Away</div>
-                <div class="artist-name">twenty one pilots</div>
-
-
-
-            </div>
-            <!--music-info-->
-        </div>
-        <!--flamingo-->
-    </div>
-    <!--glenplayer07-->
-
-    <!------- MUSIC URL ------->
-    <!--
-    to obtain a working audio, link, please read:
-     //glenthemes.tumblr.com/post/164215965424
-    put the audio url between the quote marks of src=""
--->
-
-    <audio id="audio" src="https://suonerietelefono.net/wp-content/uploads/2021/04/Shy-Away-Twenty-One-Pilots.mp3"
-        type="audio"></audio>
-
-    <!----end music player---->
-
+    <script src="https://cdn.statically.io/libs/typed.js/2.0.11/typed.min.js"></script>
     <script>
-        feather.replace()
+        var typed = new Typed('.typed', {
+            strings: ["url"],
+            typeSpeed: 240,
+            showCursor: false
+        });
+    </script>
+
+    <script src="https://cdn.statically.io/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.endtype', {
+            strings: ["tttools", "found"],
+            typeSpeed: 240,
+            showCursor: true
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
     </script>
 </body>
 
